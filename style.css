@@ -1,0 +1,265 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estiliza o corpo da página - Modo Escuro */
+body {
+  font-family: "Roboto", sans-serif; /* Define a fonte padrão */
+  background-color: #f0f0f0; /* Cor de fundo cinza claro */
+  display: flex; /* Usa Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  height: 100vh; /* Preenche a altura total da viewport */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  color: #333; /* Cor do texto cinza escuro */
+  overflow-y: auto; /* Habilita rolagem vertical quando necessário */
+  background-image: url("Cpg"); /* Adiciona a imagem de fundo */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Impede que a imagem role com a página */
+  background-blend-mode: overlay; /* Mescla a imagem de fundo com a cor */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+  font-size: 3rem; /* Tamanho da fonte */
+  color: #333; /* Cor do texto cinza escuro */
+  text-align: center; /* Alinha o texto ao centro */
+  letter-spacing: 0.4rem; /* Espaçamento entre letras */
+  margin-bottom: 2rem; /* Espaçamento abaixo do título */
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2); /* Sombra suave para o título */
+}
+
+/* Estiliza as seções da página */
+section {
+  display: flex; /* Usa Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  width: 100%; /* Largura total da página */
+  margin: 2rem 0; /* Margens superior e inferior */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+  background-color: #333;
+  width: 30rem; /* Largura dos inputs */
+  border: none; /* Remove a borda padrão */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 1.5rem; /* Borda arredondada */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+  vertical-align: middle; /* Alinha a caixa de texto verticalmente ao meio */
+  color: #fff; /* Cor do texto cinza escuro */
+  font-size: 1rem; /* Tamanho da fonte */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+  padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 1.5rem; /* Borda arredondada */
+  background-color: #333; /* Cinza escuro */
+  color: #fff; /* Cor do texto branca */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para o hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  margin-top: 2rem; /* Espaço acima do botão (ajuste conforme necessário) */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+  background-color: #555; /* Cinza mais escuro */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+
+
+/* Estilização do ícone de pesquisa */
+.search-container {
+  display: flex; /* Usa Flexbox para layout */
+  align-items: center; /* Alinha o ícone e a caixa de texto verticalmente ao centro */
+}
+
+.search-container input {
+  flex: 1; /* Faz com que o input ocupe o máximo de largura disponível */
+  margin-right: 1rem; /* Espaçamento à direita para separar do ícone */
+}
+
+.search-container button {
+  background: none; /* Remove o fundo do botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Adiciona o cursor de ponteiro ao botão */
+  padding: 0; /* Remove o padding do botão */
+  margin: 0; /* Remove a margem do botão */
+}
+
+/* Remove todas as sombras e bordas arredondadas do botão do ícone */
+#search-icon {
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #333; /* Cor do ícone */
+  cursor: pointer; /* Indica que é clicável */
+  background-color: transparent; /* Remove qualquer fundo */
+  border: none; /* Remove qualquer borda */
+  padding: 0; /* Remove qualquer padding */
+  margin: 0; /* Remove qualquer margem */
+  box-shadow: none; /* Remove sombras */
+  border-radius: 0; /* Remove bordas arredondadas */
+  vertical-align: middle; /* Alinha verticalmente ao centro do input */
+}
+
+/* Estilo ao passar o mouse */
+#search-icon:hover {
+  background-color: #f0f0f0; /* Adiciona uma cor de fundo ao passar o mouse, se desejado */
+}
+
+.res-pesquisa {
+  width: 90%;
+  max-width: 60rem;
+  max-height: 46vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background-color: none;
+  box-sizing: border-box;
+  display: block; /* Ou inline-block, se preferir */
+
+}
+
+.resultados {
+  display: flex; /* Usa Flexbox para layout */
+  align-items: flex-start; /* Alinha as imagens e textos ao início do contêiner */
+  margin-bottom: 1rem; /* Espaçamento inferior entre os itens */
+  padding: 1rem; /* Espaçamento interno */
+  border-bottom: 1px solid #ddd; /* Borda inferior para separação */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.resultados img.prato-imagem {
+  width: 120px; /* Define a largura da imagem */
+  height: 120px; /* Define a altura da imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+  margin-right: 1rem; /* Espaçamento à direita da imagem */
+  
+  /* Estilo da borda */
+  border: 1.8px solid #333; /* Borda sólida de 2px com cor cinza escuro */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 2px; /* Espaçamento entre a imagem e a borda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra suave */
+}
+
+.prato-imagem {
+  width: 120px; /* Define a largura da imagem */
+  height: 120px; /* Define a altura da imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+  margin-right: 1rem; /* Espaçamento à direita da imagem */
+  border: 2px solid #ddd; /* Adiciona uma borda sólida de 2px com cor cinza claro */
+  border-radius: 8px; /* Arredonda os cantos da borda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para um efeito de elevação */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transição suave para efeitos de hover */
+}
+
+/* Efeito ao passar o mouse */
+.prato-imagem:hover {
+  border-color: #168eff; /* Altera a cor da borda ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.resultados div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha o texto verticalmente ao centro */
+}
+
+.resultados h2 {
+  font-size: 1.5rem; /* Tamanho do título */
+  margin: 0; /* Remove margens */
+}
+
+.resultados p {
+  margin: 0.5rem 0; /* Espaçamento entre parágrafos */
+}
+
+.resultados a {
+  color: #168eff;
+  text-decoration: none;
+}
+
+.resultados a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  color: #f0f0f0; /* Cor do texto cinza escuro */
+  background-color: #333;
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 0; /* Espaçamento interno */
+  width: 100%; /* Largura total da página */
+  height: 40px; /* Altura fixa em pixels */
+  position: absolute; /* Posiciona o rodapé */
+  bottom: 0; /* Alinha ao fundo da página */
+  font-size: 14px; /* Tamanho da fonte */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o rodapé */
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Tamanho da fonte em telas menores */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+  }
+
+  section input {
+    width: 25rem; /* Largura dos inputs em telas menores */
+    padding: 0.8rem; /* Espaçamento interno em telas menores */
+  }
+
+  .search-container i {
+    font-size: 1rem; /* Reduz o tamanho do ícone em telas menores */
+  }
+
+  .res-pesquisa {
+    width: 90%; /* Largura da caixa de resultados em telas menores */
+    height: 40vh; /* Altura da caixa de resultados em telas menores */
+  }
+
+  .resultados h2 {
+    font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+    letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+  }
+
+  section input {
+    width: 17rem; /* Largura total dos inputs em telas pequenas */
+  }
+
+  section button {
+    padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+    font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+  }
+
+  .res-pesquisa {
+    width: 90%; /* Largura da caixa de resultados em telas pequenas */
+    height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+  }
+
+  .resultados h2 {
+    font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+  }
+}

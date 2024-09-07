@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="css/all.min.css"> 
+    <title>Gastronomia Moçambicana</title>
+</head>
+<body>
+    <header>
+        <h1>A Rica Gastronomia Moçambicana</h1>
+    </header>
+    <main>
+        <section>
+            <div class="search-container">
+                <input type="text" id="buscar" placeholder="Digite o seu prato típico ou busque no ícone a direita">
+                <button id="search-icon">
+                    <i class="fas fa-search"> </i>
+                </button>
+            </div>
+            <button id="search-button">Pesquisar</button>
+            <p id="error-message" style="color: red;"></p> <!-- Mensagem de erro -->
+        </section>
+        <section class="res-pesquisa" id="resposta">
+            <!-- Conteúdo dos resultados será adicionado aqui -->
+        </section>
+    </main>
+    <footer>
+        <p>©2024 - Gastronomia Moçambicana . Todos os direitos reservados</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="logica.js"></script>
+</body>
+</html>
