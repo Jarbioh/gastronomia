@@ -1,3 +1,3 @@
-## Entre no Link Abaixo e Veja o Site
+## Entre no Link Abaixo
 
 https://gastronomi.vercel.app/
